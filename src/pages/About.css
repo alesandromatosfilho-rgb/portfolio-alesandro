@@ -1,0 +1,93 @@
+/* src/pages/About.css */
+.about-page {
+  padding: 80px 20px;
+  text-align: left;
+}
+
+.about-me-section h1 {
+  font-size: 3em;
+  color: #333;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 1.2em;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  color: #555;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.experience-column, .skills-column {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.experience-column h2, .skills-column h2 {
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.job-entry {
+  margin-bottom: 30px;
+}
+
+.job-entry h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.job-entry .duration {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.job-entry ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.skill-category {
+  margin-bottom: 25px;
+}
+
+.skill-category h3 {
+  font-size: 1.3em;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.skill-category p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .experience-skills {
+    flex-direction: column;
+    align-items: center;
+  }
+}

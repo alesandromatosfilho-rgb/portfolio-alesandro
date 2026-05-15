@@ -1,0 +1,81 @@
+/* src/pages/Home.css */
+.home-page-3d {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Garante que o 3D não cause scroll */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.background-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Fica no fundo */
+}
+
+.hero-content-3d {
+  position: relative;
+  z-index: 1; /* Fica acima do fundo 3D */
+  text-align: center;
+  padding: 20px;
+  max-width: 900px;
+  /* Adicione um fundo semi-transparente se o texto 3D ficar difícil de ler */
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  /* border-radius: 10px; */
+}
+
+.hero-content-3d .tagline {
+  font-size: 1.3em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero-actions-3d .btn {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 0 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background-color: white;
+  color: #007bff;
+  border: 2px solid white;
+}
+
+.btn-primary:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Estilos para o Canvas do texto 3D */
+.hero-content-3d > ._r3f_canvas { /* Seleciona o canvas gerado pelo react-three-fiber */
+  height: 250px !important; /* Ajuste a altura para o texto 3D */
+  width: 100% !important;
+  margin-bottom: 20px;
+}

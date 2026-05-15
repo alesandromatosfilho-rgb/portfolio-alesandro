@@ -35,7 +35,7 @@ function ProfileCard() {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/alesandro-matos-almeida-filho-ab13a020a/"
+          href="www.linkedin.com/in/alesandro-filho-7a1617306"
           target="_blank"
           rel="noreferrer"
           className="icon-button"
